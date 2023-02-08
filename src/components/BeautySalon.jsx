@@ -13,30 +13,30 @@ const BeautySalon = () => {
             .catch(err => console.log(err));
     }, []);
 
-    const services = Services.map((service) => (
-        service.types.map((elem) => (
-            <>
-                <div className="card">
-                    <div className="card-body">
-                        <div id={elem.id}>
-                            <h6 className="text-muted card-subtitle mb-2">
-                                <span style={{ color: "rgb(65, 63, 60)" }}>{service.name}</span>
-                            </h6>
-                            <select>
-                                <optgroup>
-                                    <option value={elem.id}>€{elem.price} · {elem.time} min · {elem.description}</option>
-                                </optgroup>
-                            </select>
-                            <input type="checkbox" />
-                        </div>
-                        <p className="card-text"><span style={{ color: "rgb(65, 63, 60)" }}>Con cualquier empleado disponible</span>
-                            <br />
-                        </p>
-                    </div>
-                </div>
-            </>
-        ))
-    ));
+    // const services = Services.map((service) => (
+    //     service.types.map((elem) => (
+    //         <>
+    //             <div className="card">
+    //                 <div className="card-body">
+    //                     <div id={elem.id}>
+    //                         <h6 className="text-muted card-subtitle mb-2">
+    //                             <span style={{ color: "rgb(65, 63, 60)" }}>{service.name}</span>
+    //                         </h6>
+    //                         <select>
+    //                             <optgroup>
+    //                                 <option value={elem.id}>€{elem.price} · {elem.time} min · {elem.description}</option>
+    //                             </optgroup>
+    //                         </select>
+    //                         <input type="checkbox" />
+    //                     </div>
+    //                     <p className="card-text"><span style={{ color: "rgb(65, 63, 60)" }}>Con cualquier empleado disponible</span>
+    //                         <br />
+    //                     </p>
+    //                 </div>
+    //             </div>
+    //         </>
+    //     ))
+    // ));
 
     return (
         <>
@@ -94,7 +94,7 @@ const BeautySalon = () => {
                                         <h4 className="card-title"><span style={{ color: "rgb(0, 0, 0)" }}>Selecciona uno o más servicios</span>
                                             <br />
                                         </h4>
-                                        {services}
+                                        {/* {services} */}
                                     </div>
                                 </div>
                             </div>
